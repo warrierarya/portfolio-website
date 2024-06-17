@@ -122,7 +122,7 @@
             background-color: white;
             margin: 0 100px;
         }
-    
+
         .formdesign {
             font-size: 15px;
 
@@ -146,13 +146,15 @@
             width: 100px;
             height: 20px;
             font-size: 15px;
-            margin-left:150px;
+            margin-left: 150px;
         }
-        #message{
+
+        #message {
             margin-left: -13px;
         }
-        #email{
-            margin-left:3.5px;
+
+        #email {
+            margin-left: 3.5px;
         }
 
         .second h1 {
@@ -193,6 +195,100 @@
         .flex li:hover {
             text-decoration: underline;
         }
+
+        @media (max-width: 1200px) {
+
+            /* Adjustments for medium screens */
+            .first {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .first>div {
+                width: 70%;
+                margin-bottom: 30px;
+            }
+
+            .second {
+                margin-left: 50px;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            /* Adjustments for small tablets and mobile devices */
+            .nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav ul li {
+                margin: 10px 0;
+            }
+
+            .first {
+                margin: 50px 0;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .first>div {
+                width: 80%;
+            }
+
+            .second {
+                margin-left: 20px;
+                max-width: 90vw;
+                height: auto;
+            }
+
+            .flex {
+                padding: 20px;
+            }
+
+            .footer-second {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            /* Adjustments for smaller devices like smartphones */
+            .nav {
+                height: auto;
+            }
+
+            .nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav ul li {
+                margin: 10px 0;
+            }
+
+            .first {
+                margin: 30px 0;
+            }
+
+            .leftsection {
+                font-size: 2rem;
+            }
+
+            .rightsection img {
+                width: 100%;
+                height: auto;
+            }
+
+            .but {
+                width: 80px;
+            }
+
+            .flex {
+                flex-direction: column;
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 
@@ -214,31 +310,31 @@
         <section class="first">
             <div class="leftsection">Hi,My Name is <span class="purple">Arya</span>
                 <div>I am a Btech student,</div>
-                <span id="element"></span>
+                <span id="element">Web Developer and Programmer.</span>
             </div>
             <div class="rightsection">
-                <img src="img/arya.jpg">
+                <img src="arya.jpg">
             </div>
         </section>
         <hr>
         <section class="second">
             <span class="text-gray">Do you want to know me more? Fill the form below</span>
             <h1>CONTACT ME </h1>
-            <form aciton ="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+            <form aciton="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
                 <div class="formdesign" id="name">
                     Name: <input type="text" name="fname" required><b><span class="formerror"> </span></b>
                 </div>
-        
+
                 <div class="formdesign" id="email">
                     Email: <input type="email" name="femail" required><b><span class="formerror"> </span></b>
                 </div>
-        
+
                 <div class="formdesign" id="message">
-                    Message:<input type="text" name="fmessage" required><b><span class="formerror" ></span></b>
+                    Message:<input type="text" name="fmessage" required><b><span class="formerror"></span></b>
                 </div>
-        
+
                 <input class="but" type="submit" value="Submit">
-        
+
             </form>
         </section>
     </main>
@@ -263,13 +359,6 @@
 
             <div class="rights">Copyright&#169;http://127.0.0.1:5500/arya.html|All rights reserved</div>
     </footer>
-    <script src="http://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web developer.', 'programmer.'],
-            typeSpeed: 40,
-        })
-    </script>
 </body>
 <script src="arya.js"></script>
 
