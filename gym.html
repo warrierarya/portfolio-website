@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness India</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+<link rel="stylesheets" href="css/syle.css">
+<style>
+    /* CSS Reset */
+    body{
+        font-family:'Baloo Bhai 2',cursive;
+        margin:0px;
+        padding:0px;
+        background:url('gym.jpg');
+    }
+    .left{
+        display:inline-block;
+        position:absolute;
+        left: 3px;
+        top:20px;
+    }
+    .left img{
+        margin-top:0px;
+        width:732px;
+        height:1070px;
+    }
+    .left div{
+        margin-top: 0px;
+        margin-left: 65px;
+        color:white;
+        font-size: 50px;
+        left:50px
+    }
+    .mid{
+        display:block;
+        margin:20px auto;
+        width:45%;
+        margin-left:680px;
+
+
+    }
+    .right{
+        position:absolute;
+        display:inline-block;
+        top:20px;
+        right:34px;
+    }
+    .navbar{
+        display:inline-block;
+        margin-bottom:15px;
+
+    }
+    .navbar li{
+        display:inline-block;
+        font-size: 18px;
+    }
+    .navbar li a{
+        color:white;
+        text-decoration:none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover{
+        text-decoration: underline;
+        color:grey;
+    }
+    .btn{
+        font-family:'Baloo Bhai 2',cursive;
+        margin:0px 9px;
+        padding:3px 10px;
+        border:2px solid grey;
+        border-radius: 10px;
+        cursor:pointer;
+
+
+    }
+    .btn:hover{
+        background-color:grey;
+    }
+    .container{
+        border:2px solid white;
+        margin:2px 2px;
+        padding:2px 2px;
+        width:36%;
+        border-radius:2px;
+        margin-left:850px;
+        margin-top: 700px;
+        color:white;
+
+    }
+    .form-group input{
+        font-family:'Baloo Bhai 2',cursive;
+        text-align: center;
+        display:block;
+        width:400px;
+        border:2px solid black;
+        padding: 6px;
+        margin: 11px auto;
+        border-radius: 23px;
+
+    }
+    .container button{
+        display: block;
+        width:23%;
+        margin:auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+           <div class="overlay text"><b>FITNESS INDIA</b></div>
+           <img src="gym 2.jpg" alt="">
+
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us </button>
+
+        </div>
+    </header>
+    <div class="container">
+    <h1>&nbsp;Join the best gym of India right now</h1>
+    <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name=""placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name=""placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name=""placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name=""placeholder="Enter your Locality">
+        </div>
+        <button class="btn">Submit</button>
+    </form>
+    </div>    
+</body>
+</html>
